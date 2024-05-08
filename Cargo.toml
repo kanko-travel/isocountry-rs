@@ -14,3 +14,4 @@ edition = "2018"
 [dependencies]
 thiserror = "1"
 serde = "1"
+schemars = "0.8"
