@@ -20,6 +20,7 @@
 //OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //SOFTWARE.
 
+use model::Enum;
 use schemars::JsonSchema;
 use serde::de::{self, Visitor};
 use serde::{Deserialize, Deserializer, Serialize, Serializer};
@@ -37,7 +38,7 @@ pub mod numeric;
 
 mod sorted_arrays;
 
-#[derive(Debug, Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash, JsonSchema)]
+#[derive(Debug, Copy, Clone, Eq, PartialEq, Ord, PartialOrd, Hash, JsonSchema, Enum)]
 /// An enumeration of all ISO-3166-1 country codes
 pub enum CountryCode {
     /// Afghanistan
