@@ -15,4 +15,4 @@ edition = "2018"
 thiserror = "1"
 serde = "1"
 schemars = "0.8"
-model = { git = "https://github.com/kanko-travel/model.git", rev = "6954fda" }
+model = { git = "https://github.com/kanko-travel/model.git", tag = "pre-0.1 " }
